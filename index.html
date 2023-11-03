@@ -169,6 +169,14 @@
         navbar.classList.remove('scrolled'); // Remove the CSS class
     }
 });
+    window.addEventListener('DOMContentLoaded', function() {
+  var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  var aboutElement = document.getElementById('about');
+  
+  if (screenWidth < 1536) {
+    aboutElement.style.marginTop = '100px';
+  }
+});
 </script>
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
